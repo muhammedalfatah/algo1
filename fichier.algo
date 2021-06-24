@@ -1,0 +1,21 @@
+ALGORITHM length_txt
+VAR
+    sentence : STRING;
+    c : CHAR;
+    nc,nm,nv:INTEGER
+BEGIN
+nc=0;
+nm=0;
+nv=0;
+    WHILE (c<>".") DO
+        nc:=nc+1
+        IF (c=a OR c=e OR c=i OR c=u OR c=y OR c=o ) THEN
+            nv:=nv+1
+        END_IF
+        IF (c=" ") THEN
+        nm:= nm+1
+        END_IF
+        
+    END_WHILE
+    Write(result);
+END
